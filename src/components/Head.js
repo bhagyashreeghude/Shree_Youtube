@@ -3,12 +3,13 @@ import {
   HAMBURGER_LOGO_URL,
   USER_ICON_IMG_URL,
   YOUTUBE_LOGO,
-  // YOUTUBE_SEARCH_SUGGESTION_API,
+ 
   YOUTUBE_SEARCH_SUGGESTION_API2,
 } from "../utils/constants";
 import { useDispatch, useSelector } from "react-redux";
 import { toggleMenu } from "../utils/appSlice";
 import { chacheResults } from "../utils/searchSlice";
+import {KEY} from "../utils/constants";
 
 const Head = () => {
   const [searchQuery, setSearchQuery] = useState("");
@@ -33,7 +34,7 @@ const Head = () => {
 
   const getSearchSuggestions = async () => {
     // console.log("api call - " + searchQuery);
-    const data = await fetch(YOUTUBE_SEARCH_SUGGESTION_API2);
+    const data = await fetch(YOUTUBE_SEARCH_SUGGESTION_API2+process.env.REACT_YOUTUBE_API_KEY3);
     const json = await data.json();
     // console.log(json[1]);
     setSuggestions(json[1]);
