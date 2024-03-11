@@ -2,10 +2,6 @@ import React from "react";
 import Button from "./Button";
 const ButtonsList = () => {
 
-
-
-
-  
   return (
     <div className=" flex ">
       <Button name="All" />
