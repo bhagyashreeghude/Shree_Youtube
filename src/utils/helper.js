@@ -191,4 +191,4 @@ export function generateMessageString(length) {
   return result;
 }
 
-console.log(generateMessageString(5));
+// console.log(generateMessageString(5));
