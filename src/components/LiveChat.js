@@ -11,7 +11,7 @@ const LiveChat = () => {
 
   useEffect(() => {
     const i = setInterval(() => {
-      console.log("i:", i);
+      // console.log("i:", i);
       dispatch(
         addMessage({
           name: generate(),

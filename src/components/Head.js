@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from "react";
 import {
   HAMBURGER_LOGO_URL,
+  POPULAR_URL,
   USER_ICON_IMG_URL,
   YOUTUBE_LOGO,
  
@@ -9,7 +10,7 @@ import {
 import { useDispatch, useSelector } from "react-redux";
 import { toggleMenu } from "../utils/appSlice";
 import { chacheResults } from "../utils/searchSlice";
-import {KEY} from "../utils/constants";
+
 
 const Head = () => {
   const [searchQuery, setSearchQuery] = useState("");
@@ -34,7 +35,7 @@ const Head = () => {
 
   const getSearchSuggestions = async () => {
     // console.log("api call - " + searchQuery);
-    const data = await fetch(YOUTUBE_SEARCH_SUGGESTION_API2+process.env.REACT_YOUTUBE_API_KEY3);
+    const data = await fetch(POPULAR_URL+process.env.REACT_APP_KEY2);
     const json = await data.json();
     // console.log(json[1]);
     setSuggestions(json[1]);
@@ -77,7 +78,7 @@ const Head = () => {
           placeholder="Search"
           type="text"
         ></input>
-        <button className=" pl-1 border border-gray-700 py-1.5 rounded-r-full bg-gray-200">
+        <button className=" pl-1 border px-2 border-gray-700 py-1.5 rounded-r-full bg-gray-200">
           Search
         </button>
       </div>

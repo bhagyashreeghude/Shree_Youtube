@@ -10,7 +10,7 @@ const WatchPage = ({ info }) => {
   const dispatch = useDispatch();
   const [searchParams] = useSearchParams();
 
-  console.log("id", searchParams.get("v"));
+  // console.log("id", searchParams.get("v"));
 
   useEffect(() => {
     dispatch(closeMenu());

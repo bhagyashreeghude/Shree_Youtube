@@ -6,6 +6,7 @@ const Sidebar = () => {
   const isMenuOpen = useSelector((store) => store?.app?.isMenuOpen);
   const istLiveOpen = useSelector((store)=>store?.app?.isLiveOpen);
   const isSportOpen = useSelector((store)=>store?.app?.isSportOpen);
+  const isTechOpen = useSelector((store)=>store?.app?.isTechOpen);
   // early return
   if (!isMenuOpen) return null;
 
@@ -21,6 +22,7 @@ const Sidebar = () => {
       <ul>
         <li>Music</li>
         <li><Link to='/sport'>Sports</Link></li>
+        <li><Link to='/tech'>Technology</Link></li>
         <li>Gaming</li>
         <li>News</li>
       </ul>

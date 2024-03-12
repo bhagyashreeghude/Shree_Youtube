@@ -13,8 +13,7 @@ const ButtonsList = () => {
       <Button name="T-series" />
       <Button name="Comedy" />
       <Button name="Web Development" />
-      <Button name="Computer Science" />
-      <Button name="Idian Pop Music" />
+   
     </div>
   );
 };

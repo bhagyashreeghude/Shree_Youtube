@@ -6,7 +6,8 @@ const appSlice = createSlice({
     isMenuOpen: true,
     isLiveOpen: false,
     isOpenComment: false,
-    isSportOpen:false
+    isSportOpen:false,
+    isTechOpen:false
   },
   reducers: {
     toggleMenu: (state) => {
@@ -23,6 +24,9 @@ const appSlice = createSlice({
     },
     SportOpen: (state) => {
       state.isSportOpen = true;
+    },
+    TechOpen: (state) => {
+      state.isTechOpen = true;
     },
   },
 });

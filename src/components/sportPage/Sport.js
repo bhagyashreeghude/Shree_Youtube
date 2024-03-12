@@ -3,8 +3,11 @@ import WatchPage from "../WatchPage";
 
 import SearchSuggestionVideo from "../SearchSuggestionVideo";
 const Sport = () => {
+
+
+  
   return (
-    <div className="flex">
+    <div className="flex ">
       <WatchPage />
       <SearchSuggestionVideo />
     </div>

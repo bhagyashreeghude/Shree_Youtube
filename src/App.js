@@ -8,6 +8,7 @@ import MainContainer from "./components/MainContainer";
 import WatchPage from "./components/WatchPage";
 import Live from "./components/Live";
 import Sport from "./components/sportPage/Sport";
+import TechContainer from "./components/technology/TechContainer";
 
 const appRouter = createBrowserRouter([
   {
@@ -29,6 +30,10 @@ const appRouter = createBrowserRouter([
       {
         path: "/sport",
         element: <Sport/>,
+      },
+      {
+        path: "/tech",
+        element: <TechContainer/>,
       },
     ],
   },
