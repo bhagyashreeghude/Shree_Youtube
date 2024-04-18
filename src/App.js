@@ -6,7 +6,7 @@ import store from "./utils/store";
 import { RouterProvider, createBrowserRouter } from "react-router-dom";
 import MainContainer from "./components/MainContainer";
 import WatchPage from "./components/WatchPage";
-import Live from "./components/Live";
+import Live from "./components/Live/Live";
 import Sport from "./components/sportPage/Sport";
 import TechContainer from "./components/technology/TechContainer";
 

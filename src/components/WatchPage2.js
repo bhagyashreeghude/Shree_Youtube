@@ -11,6 +11,7 @@ const WatchPage2 = () => {
       <div className="ml-4 h-24 w-80">
             <SearchSuggestionVideo/>
             
+            
           </div>
     </div>
   );

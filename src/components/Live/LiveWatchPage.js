@@ -1,7 +1,7 @@
 import React from "react";
 import LiveChat from "./LiveChat";
-import WatchPage from "./WatchPage";
-import SearchSuggestionVideo from "./SearchSuggestionVideo";
+import WatchPage from "../WatchPage";
+
 
 const WatchPageOther = () => {
   return (

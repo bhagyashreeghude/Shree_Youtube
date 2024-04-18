@@ -1,4 +1,5 @@
 import React from "react";
+import SideViedoContainer from "./sideVide/SideViedoContainer";
 
 const VideoCard = ({ info }) => {
   // console.log(info);
@@ -6,7 +7,8 @@ const VideoCard = ({ info }) => {
   // const {channelTitle,title,thumbnails} = snippet;
 
   return (
-    <div className=" pl-2 w-72 shadow h-[340px] overflow-hidden">
+    <>
+    <div className=" pl-2 w-72 shadow h-[340px] overflow-hidden hover:scale-110">
       <img
         className="rounded-lg "
         alt="thumbnail-img"
@@ -18,7 +20,11 @@ const VideoCard = ({ info }) => {
         <li>{info?.snippet?.publishedAt}-ago</li>
         <li>{info?.statistics?.viewCount}-views</li>
       </ul>
+
     </div>
+    {/* <SideViedoContainer/> */}
+    </>
+
   );
 };
 

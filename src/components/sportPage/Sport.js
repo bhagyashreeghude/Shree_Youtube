@@ -1,15 +1,15 @@
 import React from "react";
+import SideViedoContainer from "../sideVide/SideViedoContainer";
 import WatchPage from "../WatchPage";
-
-import SearchSuggestionVideo from "../SearchSuggestionVideo";
 const Sport = () => {
 
 
   
   return (
     <div className="flex ">
-      <WatchPage />
-      <SearchSuggestionVideo />
+      <WatchPage/>
+      <SideViedoContainer/>
+      
     </div>
   );
 };

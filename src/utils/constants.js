@@ -9,6 +9,6 @@ export const USER_ICON_IMG_URL2 ="https://t4.ftcdn.net/jpg/00/65/77/27/240_F_657
 export const LIVE_CHAT_OFFSET= 25;
 
 
-
+export const YOUTUBE_SEARCH_API="http://suggestqueries.google.com/complete/search?client=firefox&ds=yt&q="
 
 export const POPULAR_URL="https://youtube.googleapis.com/youtube/v3/videos?part=snippet%2CcontentDetails%2Cstatistics&chart=mostPopular&maxResults=50&regionCode=IN&key="

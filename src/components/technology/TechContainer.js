@@ -2,6 +2,7 @@ import React, { useEffect, useState } from 'react'
 import VideoCard from '../VideoCard'
 import { POPULAR_URL } from '../../utils/constants';
 import WatchPage from '../WatchPage';
+import SideViedoContainer from '../sideVide/SideViedoContainer';
 
 const TechContainer = () => {
 const [techV,setTechV] = useState([])
@@ -24,8 +25,9 @@ const getVideos=async()=>{
       }
     }
     return (
-      <div>
+      <div className='flex'>
           <WatchPage/>
+          <SideViedoContainer/>
       </div>
       )
 }

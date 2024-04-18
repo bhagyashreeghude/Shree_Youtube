@@ -4,7 +4,7 @@ import VideoContainer from './VideoContainer'
 
 const SearchSuggestion = () => {
   return (
-    <div className='overflow-auto flex shadow-lg h-1/2  '>
+    <div className='overflow-auto flex shadow-lg w-90 '>
         
         <VideoContainer/>
     </div>

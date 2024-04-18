@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import { POPULAR_URL, YOUTUBE_API3 } from "../utils/constants";
+import { POPULAR_URL} from "../utils/constants";
 import VideoCard from "./VideoCard";
 import { Link } from "react-router-dom";
 
