@@ -21,13 +21,13 @@ console.log("Video Title:", searchParams.get("title"));
 
   return (
     <>
-      <div className="flex mt-0 pl-12">
+      <div className="flex mt-0 md:pl-12  sm:w-24 sm:mt-2 sm:ml-4 justify-center ">
         <div className="px-5 flex ">
           <div className="">
             <iframe
-              className="rounded-lg"
-              width="900"
-              height="450"
+              className="rounded-lg sm:w-[700px] sm:h-[300px] md:h-[450px] md:w-[900px]"
+              // width="900 sm: w-[25]"
+              // height="450 sm: h-[20]"
               src={"https://www.youtube.com/embed/" + searchParams.get("v")}
               title={
                 "https://www.youtube.com/embed/" + searchParams.get("title")
@@ -42,7 +42,7 @@ console.log("Video Title:", searchParams.get("title"));
             
           </div>
           <div>
-            <SideViedoContainer/>
+            {/* <SideViedoContainer/> */}
           </div>
         </div>
       </div>

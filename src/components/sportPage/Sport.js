@@ -6,7 +6,7 @@ const Sport = () => {
 
   
   return (
-    <div className="flex ">
+    <div className="md:flex">
       <WatchPage/>
       <SideViedoContainer/>
       

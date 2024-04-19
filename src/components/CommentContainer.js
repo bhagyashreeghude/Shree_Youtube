@@ -194,7 +194,7 @@ const CommentsList = ({ comments }) => {
   return comments.map((comment, index) => (
     <div>
       <Comment key={index} data={comment} />
-      <div className="pl-2 border border-l-black ml-3">
+      <div className="pl-2 border border-l-black md:ml-3">
         <CommentsList key={index} comments={comment.replies} />
       </div>
     </div>
@@ -203,8 +203,8 @@ const CommentsList = ({ comments }) => {
 
 const CommentContainer = () => {
   return (
-    <div className="m-5 p-2 cursor-pointer">
-      <h1 className="text-2xl font-bold" onClick={() =>OpenComment()}>
+    <div className="md:m-5 md:p-2 cursor-pointer">
+      <h1 className="text-2xl font-bold " onClick={() =>OpenComment()}>
         Comments:
       </h1>
       <CommentsList comments={commentsData} />

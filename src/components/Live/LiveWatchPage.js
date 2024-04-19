@@ -6,7 +6,7 @@ import WatchPage from "../WatchPage";
 const WatchPageOther = () => {
   return (
     <>
-      <div className="flex ml-1">
+      <div className=" ml-1  sm:ml-0 md:flex">
         <WatchPage />
         <LiveChat />
       </div>

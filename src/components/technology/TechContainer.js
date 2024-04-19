@@ -25,7 +25,7 @@ const getVideos=async()=>{
       }
     }
     return (
-      <div className='flex'>
+      <div className='md:flex '>
           <WatchPage/>
           <SideViedoContainer/>
       </div>
