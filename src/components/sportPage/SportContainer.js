@@ -1,9 +1,10 @@
 import React, { useEffect, useState } from "react";
-import { SPORT_URL, TECHNOLOGY_API_URL } from "../../utils/constants";
-import Sport  from"./Sport";
 import { Link } from "react-router-dom";
 import SportCard from "./SportCard";
-const SportContainer = ({video}) => {
+import { SPORT_API } from "../../utils/constants";
+
+
+const SportContainer = ({info}) => {
   const [sport, setSport] = useState([]);
 
   useEffect(() => {
@@ -11,15 +12,16 @@ const SportContainer = ({video}) => {
   }, []);
 
   const getVideos = async()=>{
-    const data = await fetch(TECHNOLOGY_API_URL+process.env.REACT_APP_YOUTUBE_API_KEY)
+    const data = await fetch(SPORT_API+process.env.REACT_APP_KEY2)
     const json= await data.json()
-    console.log(json)
+    console.log(json.items)
     setSport(json.items)
   }
   return (
     <div className="flex flex-wrap ">
+      {/* <SportCard info={sport[0]}/> */}
     {sport&&sport.map((sports) => (
-      <Link key={sports.id} to={"/sports?v=" + sports.id}>
+      <Link key={sports.id} to={"/watch?v=" + sports.id}>
         <SportCard  info={sports} />
       </Link>
     ))}
@@ -27,4 +29,4 @@ const SportContainer = ({video}) => {
   );
 };
 
-export default SportContainer;
+export default SportContainer

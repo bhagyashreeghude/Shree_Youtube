@@ -30,6 +30,6 @@ const appSlice = createSlice({
     },
   },
 });
-export const { toggleMenu, closeMenu, closeLive, OpenComment ,SportOpen} =
+export const { toggleMenu, closeMenu, closeLive, OpenComment ,SportOpen,TechOpen} =
   appSlice.actions;
 export default appSlice.reducer;

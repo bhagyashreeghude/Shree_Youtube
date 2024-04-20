@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react'
-import { POPULAR_URL } from '../../utils/constants';
+import { MUSIC_API } from '../../utils/constants';
 import SideVideoCard from './SideVideoCard';
 import { Link } from 'react-router-dom';
 const SideViedoContainer = () => {
@@ -10,13 +10,13 @@ const SideViedoContainer = () => {
   },[])
 
   const getVideos = async()=>{
-    const data = await fetch(POPULAR_URL+process.env.REACT_APP_KEY2)
+    const data = await fetch(MUSIC_API+process.env.REACT_APP_KEY2)
     const json = await data.json()
     setVideos(json.items)
   }
 
   return (
-    <div>
+    <div className=''>
       {videos && videos.map((video)=>(
         <Link key={video.id} to={"/watch?v="+ video.id}><SideVideoCard info={video}/></Link>
       ))}

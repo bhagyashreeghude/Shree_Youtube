@@ -1,11 +1,16 @@
 import React from "react";
-import LiveWatchPage from "./LiveWatchPage";
+import LiveContainer from "./LiveContainer";
+import LiveChat from "./LiveChat"
+import LiveIframe from "./LiveIframe";
 
 const Live = () => {
   return (
     <>
       <div className="">
-        <LiveWatchPage />
+        <LiveContainer/>
+       <LiveIframe/>
+       
+        
       </div>
     </>
   );

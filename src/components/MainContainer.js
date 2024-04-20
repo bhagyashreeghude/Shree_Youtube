@@ -5,7 +5,7 @@ import SideViedoContainer from './sideVide/SideViedoContainer';
 
 const MainContainer = () => {
   return (
-    <div className='sm:w-52 h-auto '>
+    <div className='sm:w-full md:w-full h-auto '>
       <ButtonsList/>
       <VideoContainer />
       

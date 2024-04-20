@@ -172,45 +172,45 @@ const Head = () => {
   };
 
   return (
-    <div className="grid grid-flow-row-dense grid-cols-7 grid-rows-1 p-3 md:m-2 shadow-lg sm:w-full ">
+    <div className="md:w-full p-3 md:m-2 shadow-lg sm:w-full flex ">
       <div className="flex">
         <img
           onClick={toggleMenuHandler}
-          className="md:h-8 cursor-pointer col-span-1 sm: h-6"
+          className="md:h-8 cursor-pointer  sm: h-6"
           alt="logo"
           src={HAMBURGER_LOGO_URL}
         />
         <a href="/">
           <img
-            className=" col-span-1 md:h-11 md:mx-2 md:ml-5 sm: h-6 pl-4 "
+            className=" md:h-11 md:mx-2 md:ml-5 sm:h-8 pl-4 "
             alt="youtube-logo"
             src={YOUTUBE_LOGO}
           />
         </a>
       </div>
 
-      <div className="flex md:px-10    sm:w-28 mx-14">
+      <div className="flex md:px-10 md:w-1/2   sm:w-28 mx-14">
         <input
           value={searchQuery}
           onChange={(e) => setSearchQuery(e.target.value)}
           onFocus={() => setShowSuggestions(true)}
           onBlur={() => setShowSuggestions(false)}
-          className="col-start-2 col-end-5 md:w-[66rem] md:mx-14 border border-gray-400  rounded-l-full  sm:w-10 sm:pt-6 "
+          className=" md:w-[940px] md:ml-14 border border-gray-400  rounded-l-full  sm:w-10 sm:pt-6 sm:pl-16 "
           type="text"
         />
-        <button className="col-span-1 border border-gray-400  rounded-r-full bg-gray-100  sm: p-2">
+        <button className="border border-gray-400  rounded-r-full bg-gray-100  sm:p-2">
           Search
         </button>
       </div>
       {showSuggestions && (
-        <div className="absolute overflow-hidden shadow-lg rounded-lg border border-gray-100 bg-white md:mx-[324px]  md:my-12 md:px-2 md:w-[33rem] md:h-60  sm:w-[210px] sm:mx-15 sm:bg-slate-300
+        <div className="absolute overflow-hidden shadow-lg rounded-lg  bg-white md:mt-14 md:h-40 md:mx-80 md:w-[33rem] border border-gray-300  sm:mt-14 sm:w-28
         ">
           <ul>
             {suggestions &&
               suggestions.map((suggestion) => (
                 <li
                   key={suggestion}
-                  className="md:px-3 md:py-2 shadow hover:bg-gray-100 justify-center"
+                  className="md:px-3 md:py-2  hover:bg-gray-100  bg-white  md:w-[37rem] shadow-lg border border-gray-300 sm:pl-6"
                 >
                   🔍 {suggestion}
                 </li>
@@ -219,9 +219,9 @@ const Head = () => {
         </div>
       )}
 
-      <div className=" w-10">
+      <div className="sm:pl-0">
         <img
-          className="col-span-1 md:h-8 sm:pr-12  sm: h-6 pl-80 mt-0 "
+          className=" md:h-8 sm:pr-12  sm: h-6 pl-80 mt-0 "
           alt="user-icon"
           src={USER_ICON_IMG_URL}
         />

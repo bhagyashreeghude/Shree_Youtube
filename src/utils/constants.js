@@ -12,3 +12,11 @@ export const LIVE_CHAT_OFFSET= 25;
 export const YOUTUBE_SEARCH_API="http://suggestqueries.google.com/complete/search?client=firefox&ds=yt&q="
 
 export const POPULAR_URL="https://youtube.googleapis.com/youtube/v3/videos?part=snippet%2CcontentDetails%2Cstatistics&chart=mostPopular&maxResults=50&regionCode=IN&key="
+
+export const TECHNOLOGY_API="https://www.googleapis.com/youtube/v3/search?&q=technology&type=video&part=snippet&maxResults=50&regionCode=IN&key="
+
+export const SPORT_API="https://www.googleapis.com/youtube/v3/videos?&part=snippet&chart=mostPopular&maxResults=50&order=viewCount&videoCategoryId=17&regionCode=IN&key="
+
+export const LIVE_STREAMING_API="https://www.googleapis.com/youtube/v3/search?&part=snippet&maxResults=50&type=video&eventType=live&videoCategoryId=27&q=education&regionCode=IN&key="
+
+export const MUSIC_API="https://www.googleapis.com/youtube/v3/videos?&part=snippet&chart=mostPopular&maxResults=50&order=viewCount&videoCategoryId=10&regionCode=IN&key="

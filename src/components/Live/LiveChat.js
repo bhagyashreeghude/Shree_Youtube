@@ -6,7 +6,7 @@ import { generate, generateMessageString } from "../../utils/helper";
 import SideViedoContainer from "../sideVide/SideViedoContainer";
 
 const LiveChat = () => {
-  const [liveChatMessage, setLiveChatMessage] = useState("")
+  const [liveChatMessage, setLiveChatMessage] = useState("");
   const dispatch = useDispatch();
   const chatMessage = useSelector((store) => store.chat.messages);
 
@@ -30,15 +30,24 @@ const LiveChat = () => {
         ))}
       </div>
 
-      <form className="  ml-1 p-1 h-[50px] pt-2  border border-black bg-slate-100 rounded-lg" onSubmit={(e)=>{
-        e.preventDefault();
-        console.log("on submit form")
-        dispatch(addMessage({name:"shree",
-      message:liveChatMessage}))
-        
-      }}>
-        <input className="p-2 w-60" placeholder="Chat..." type="text" value={liveChatMessage} onChange={(e)=>setLiveChatMessage(e.target.value)}></input>
-        <button className="px-4 m-2 bg-green-300 border border-black rounded" >Submit</button>
+      <form
+        className="  ml-1 p-1 h-[50px] pt-2  border border-black bg-slate-100 rounded-lg"
+        onSubmit={(e) => {
+          e.preventDefault();
+          console.log("on submit form");
+          dispatch(addMessage({ name: "shree", message: liveChatMessage }));
+        }}
+      >
+        <input
+          className="p-2 w-60"
+          placeholder="Chat..."
+          type="text"
+          value={liveChatMessage}
+          onChange={(e) => setLiveChatMessage(e.target.value)}
+        ></input>
+        <button className="px-4 m-2 bg-green-300 border border-black rounded">
+          Submit
+        </button>
       </form>
       <SideViedoContainer />
     </div>

@@ -1,6 +1,7 @@
 import React from "react";
 
-const SportCard = ({ info }) => {
+
+const TechCard = ({ info }) => {
   console.log(info?.snippet?.thumbnails?.medium?.url);
   console.log(info);
 
@@ -10,7 +11,7 @@ const SportCard = ({ info }) => {
 
   return (
     <>
-      <div className=" p-2 md:w-60 shadow md:h-[300px] overflow-hidden hover:scale-110 sm:w-10  sm:h-[20px] border-solid border-2 border-gray-700 rounded-lg bg-gray-200 m-2 ">
+      <div className=" p-2 md:w-60 shadow md:h-[300px] overflow-hidden hover:scale-110 sm:w-6  sm:h-[20px] border-solid border-2 border-gray-700 rounded-lg bg-gray-200 m-2 ">
         <img
           className="rounded-lg border-solid border-2 border-black sm:w'"
           alt="thumbnail-img"
@@ -24,8 +25,12 @@ const SportCard = ({ info }) => {
           <li>{info?.snippet?.publishedAt}-ago</li>
         </ul>
       </div>
+   
     </>
   );
 };
 
-export default SportCard;
+
+//     
+
+export default TechCard;

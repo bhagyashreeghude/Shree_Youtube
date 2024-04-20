@@ -1,15 +1,12 @@
 import React from "react";
-import SideViedoContainer from "../sideVide/SideViedoContainer";
-import WatchPage from "../WatchPage";
+import SportContainer from "./SportContainer";
+import SideVideoContainer from "../sideVide/SideViedoContainer"
+
 const Sport = () => {
-
-
-  
   return (
-    <div className="md:flex">
-      <WatchPage/>
-      <SideViedoContainer/>
-      
+    <div className="flex">
+      <SportContainer />
+      <SideVideoContainer/>
     </div>
   );
 };
