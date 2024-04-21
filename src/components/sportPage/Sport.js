@@ -4,9 +4,9 @@ import SideVideoContainer from "../sideVide/SideViedoContainer"
 
 const Sport = () => {
   return (
-    <div className="flex">
+    <div className="">
       <SportContainer />
-      <SideVideoContainer/>
+      {/* <SideVideoContainer/> */}
     </div>
   );
 };

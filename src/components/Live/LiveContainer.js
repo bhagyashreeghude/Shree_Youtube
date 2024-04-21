@@ -13,7 +13,8 @@ const LiveContainer = ({ info }) => {
   const getVideos = async () => {
     const data = await fetch(LIVE_STREAMING_API + process.env.REACT_APP_KEY2);
     const json = await data.json();
-    // console.log(json.items);
+    console.log(json?.items?.id);
+    // console.log(json?.id?.videoid)
     setLive(json.items);
   };
   return (
@@ -21,7 +22,7 @@ const LiveContainer = ({ info }) => {
       {/* <SportCard info={sport[0]}/> */}
       {live &&
         live.map((stream) => (
-          <Link key={stream.id} to={"/watch?v=" + stream.id}>
+          <Link key={stream.id} to={"/watch?v=" + stream?.id?.videoId}>
             <LiveCard info={stream} />
           </Link>
         ))}

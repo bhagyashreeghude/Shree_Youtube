@@ -1,8 +1,8 @@
 import React from "react";
 
 const LiveCard = ({ info }) => {
-  // console.log(info?.snippet?.thumbnails?.medium?.url);
-  // console.log(info);
+  console.log(info?.snippet?.thumbnails?.medium?.url);
+  console.log(info);
   // console.log(info?.snippet?.thumbnails);
 
   return (

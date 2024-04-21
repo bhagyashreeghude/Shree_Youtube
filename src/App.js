@@ -10,6 +10,7 @@ import Live from "./components/Live/Live";
 import Sport from "./components/sportPage/Sport";
 import TechContainer from "./components/technology/TechContainer";
 
+
 const appRouter = createBrowserRouter([
   {
     path: "/",

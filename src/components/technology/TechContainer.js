@@ -21,7 +21,7 @@ const TechContainer  = ({info}) => {
     <div className="flex flex-wrap ">
       {/* <SportCard info={sport[0]}/> */}
     {tech&&tech.map((technique) => (
-      <Link key={technique.id} to={"/watch?v=" + technique.id}>
+      <Link key={technique.id} to={"/watch?v=" + technique?.id?.videoId}>
         <TechCard  info={technique} />
       </Link>
     ))}
