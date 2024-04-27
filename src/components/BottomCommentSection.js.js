@@ -17,9 +17,9 @@ const BottomCommentSection= ({ sideSearch }) => {
       </div>
 
       <div className=" md:pl-72">
-        <button className="bg-gray-200 md:px-3  md:py-2 mx-2 rounded-xl sm: mt-1 ml-1 mr-2"><AiFillLike size={25}/></button>
-        <button className="bg-gray-200 md:px-3 md:py-2 mx-2 rounded-xl sm: mt-1 ml-1 mr-2"><AiFillDislike size={25} /></button>
-        <button className="bg-gray-200 md:px-3 md:py-2 mx-2 rounded-xl sm: mt-1 ml-1 mr-2">
+        <button className="bg-gray-200 md:px-3  md:py-2 mx-2 rounded-xl sm:mt-1 ml-1 mr-2"><AiFillLike size={25}/></button>
+        <button className="bg-gray-200 md:px-3 md:py-2 mx-2 rounded-xl sm:mt-1 ml-1 mr-2"><AiFillDislike size={25} /></button>
+        <button className="bg-gray-200 md:px-3 md:py-2 mx-2 rounded-xl sm:mt-1 ml-1 mr-2">
           <FaShare size={25}/>
         </button>
         <button className="bg-gray-200 md:px-3 md:py-2 md:mx-2 rounded-xl sm: mt-1 ml-1 mr-1">
