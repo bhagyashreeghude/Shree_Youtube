@@ -28,8 +28,11 @@ const appSlice = createSlice({
     TechOpen: (state) => {
       state.isTechOpen = true;
     },
+    DownloadOpen: (state) => {
+      state.isDownloadOpen = true;
+    },
   },
 });
-export const { toggleMenu, closeMenu, closeLive, OpenComment ,SportOpen,TechOpen} =
+export const { toggleMenu, closeMenu, closeLive, OpenComment ,SportOpen,TechOpen,DownloadOpen} =
   appSlice.actions;
 export default appSlice.reducer;

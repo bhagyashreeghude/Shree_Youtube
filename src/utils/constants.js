@@ -20,3 +20,5 @@ export const SPORT_API="https://www.googleapis.com/youtube/v3/videos?&part=snipp
 export const LIVE_STREAMING_API="https://www.googleapis.com/youtube/v3/search?&part=snippet&maxResults=50&type=video&eventType=live&videoCategoryId=27&q=education&regionCode=IN&key="
 
 export const MUSIC_API="https://www.googleapis.com/youtube/v3/videos?&part=snippet&chart=mostPopular&maxResults=50&order=viewCount&videoCategoryId=10&regionCode=IN&key="
+
+export const DOWNLOAD_BG_IMG="https://media.istockphoto.com/id/1384346895/photo/3d-play-icon.jpg?s=2048x2048&w=is&k=20&c=0ChyaO0VDK5MX1vTe4P4YpuSZXL5iiTpQGAL0pBb3X0="

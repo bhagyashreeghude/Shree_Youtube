@@ -11,7 +11,7 @@ const WatchPage = ({ info }) => {
   const [searchParams] = useSearchParams();
   console.log("Video ID:", searchParams.get("v"));
   console.log("Video Title:", searchParams.get("title"));
-  const title = searchParams.get('title');
+  const title = searchParams.get("title");
 
   // console.log("id", searchParams.get("v"));
 
@@ -38,7 +38,9 @@ const WatchPage = ({ info }) => {
             ></iframe>
           </div>
           <BottomCommentSection />
-            <CommentContainer />
+          <CommentContainer />
+        </div>
+        <div>
           <div className="">
             <SideViedoContainer />
           </div>

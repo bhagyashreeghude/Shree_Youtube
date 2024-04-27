@@ -9,7 +9,7 @@ const VideoCard = ({ info }) => {
 
   return (
     <>
-      <div className="sm:p-2 sm:m-2 p-2 md:w-72 shadow h-[340px] overflow-hidden hover:scale-110  border-solid border-2 border-gray-700 rounded-lg bg-gray-200 m-2 sm:w-[100%]">
+      <div className="sm:p-2 sm:m-2 p-2 md:w-80 shadow h-[340px] overflow-hidden hover:scale-110  border-solid border-2 border-gray-700 rounded-lg bg-gray-200 m-2 sm:w-[100%]">
         <img
           className="rounded-lg border-solid border-2 border-black sm:w"
           alt="thumbnail-img"

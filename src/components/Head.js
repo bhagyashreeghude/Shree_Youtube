@@ -173,7 +173,7 @@ const Head = () => {
 
   return (
     
-    <div className="md:w-full md:p-0 md:m-0 shadow-lg sm:w-[100%] flex sm:p-2  sm:m-4"> 
+    <div className="md:w-full  shadow-lg sm:w-[100%] flex"> 
       <div className="flex sm:p-3  sm:w-[100%]">
         <img
           onClick={toggleMenuHandler}
@@ -183,20 +183,20 @@ const Head = () => {
         />
         <a href="/">
           <img
-            className=" md:h-14 md:w-24 md:ml-5 sm:h-10 sm:w-30 pl-4 "
+            className="md:h-14 md:w-30 md:ml-5 sm:h-10 sm:w-30 pl-4 "
             alt="youtube-logo"
             src={YOUTUBE_LOGO}
           />
         </a>
       </div>
 
-      <div className="flex md:px-10 md:w-1/2 md:mt-2 p-2 m-2 sm:w-[640px] mx-14 sm:p-3 sm:mt-10">
+      <div className="flex  md:w-1/2 md:mt-1 sm:w-[640px] mx-64 sm:p-3 sm:mt-10">
         <input
           value={searchQuery}
           onChange={(e) => setSearchQuery(e.target.value)}
           onFocus={() => setShowSuggestions(true)}
           onBlur={() => setShowSuggestions(false)}
-          className=" md:w-[940px] md:ml-14 border border-gray-400  rounded-l-full  sm:w-10 sm:pt-10 sm:pl-16 "
+          className=" md:w-[550px] pr-10 border border-gray-400  rounded-l-full  sm:w-10  sm:pl-16 "
           type="text"
         />
         <button className="border border-gray-400  rounded-r-full bg-gray-100  sm:p-2">
@@ -204,14 +204,14 @@ const Head = () => {
         </button>
       </div>
       {showSuggestions && (
-        <div className="absolute overflow-hidden shadow-lg rounded-lg  bg-white md:mt-24 md:h-40 md:mx-[27rem] md:w-[35rem] border border-gray-300 md:pt-2 sm:mt-14 sm:w-28
+        <div className="absolute overflow-hidden shadow-lg rounded-lg  bg-white md:mt-20 md:h-40 md:mx-[34rem] md:w-[34rem] border border-gray-300 md:pt-2 sm:mt-14 sm:w-28
         ">
           <ul>
             {suggestions &&
               suggestions.map((suggestion) => (
                 <li
                   key={suggestion}
-                  className="md:px-3 md:py-2  hover:bg-gray-100  bg-white  md:w-[40rem] shadow-lg border border-gray-300 sm:pl-6"
+                  className="md:px-3 md:py-2  hover:bg-gray-100  bg-white  md:w-[550px] shadow-lg border border-gray-300 sm:pl-6"
                 >
                   🔍 {suggestion}
                 </li>
@@ -220,9 +220,9 @@ const Head = () => {
         </div>
       )}
 
-      <div className="sm:pl-0 mt-2 ">
+      <div className="sm:pl-0 ">
         <img
-          className=" md:h-8 sm:pr-12  sm:h-6 pl-80 mt-0 "
+          className=" md:h-10 mt-6 mr-14 w-80 pr-10 sm:h-6  "
           alt="user-icon"
           src={USER_ICON_IMG_URL}
         />

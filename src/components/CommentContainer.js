@@ -203,7 +203,7 @@ const CommentsList = ({ comments }) => {
 
 const CommentContainer = () => {
   return (
-    <div className="md:m-5 md:p-2 cursor-pointer sm:w-full">
+    <div className="overflow-y-scroll h-[24rem] md:m-5 md:p-2 cursor-pointer sm:w-full">
       <h1 className="text-2xl font-bold " onClick={() =>OpenComment()}>
         Comments:
       </h1>

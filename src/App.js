@@ -9,6 +9,7 @@ import WatchPage from "./components/WatchPage";
 import Live from "./components/Live/Live";
 import Sport from "./components/sportPage/Sport";
 import TechContainer from "./components/technology/TechContainer";
+import Download from "./Downloads/Download";
 
 
 const appRouter = createBrowserRouter([
@@ -35,6 +36,10 @@ const appRouter = createBrowserRouter([
       {
         path: "/tech",
         element: <TechContainer/>,
+      },
+      {
+        path: "/downloads",
+        element: <Download/>,
       },
     ],
   },

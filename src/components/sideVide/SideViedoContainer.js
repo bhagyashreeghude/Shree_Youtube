@@ -16,7 +16,7 @@ const SideViedoContainer = () => {
   }
 
   return (
-    <div className=''>
+    <div className='overflow-y-scroll h-[58rem]'>
       {videos && videos.map((video)=>(
         <Link key={video.id} to={"/watch?v="+ video.id}><SideVideoCard info={video}/></Link>
       ))}
