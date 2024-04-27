@@ -18,13 +18,13 @@ const Sidebar = () => {
   if (!isMenuOpen) return null;
 
   return (
-    <div className="shadow-lg  md:w-36 ">
+    <div className="shadow-lg  md:w-56 ">
       <ul className="sm:pt-2">
-        <li className=" md:p-3  shadow-lg hover:text-red-400"> <Link to="/"><IoHome className="sm: h-8 ml-4 pb-2 md:h-24 " size={45}/></Link></li>
-        <li className="  md:p-3  shadow-lg hover:text-red-400"><Link to="/live"><CgLivePhoto className="sm: h-8 ml-4 mt-2 pb-2 md:h-24" size={45}/></Link></li>
-        <li className= "  md:p-3 shadow-lg hover:text-red-400"><Link to='/sport'><HiTrophy className="sm: h-8 ml-4 mt-2  pb-2 md:h-24" size={45}/></Link></li>
-        <li className=" md:p-3 shadow-lg hover:text-red-400"><Link to='/tech'><RiComputerFill className="sm: h-8 ml-4 mt-2 pb-2  md:h-24" size={45}/></Link></li>
-        <li className="md:p-3 shadow-lg hover:text-red-400"><Link to="/downloads"><FaDownload className="sm: h-8 ml-4 mt-2 pb-2  md:h-24" size={45}/></Link></li>
+        <li className=" md:p-2  shadow-lg hover:text-red-400"> <Link to="/"><IoHome className="sm: h-8 ml-2 pb-2 md:h-24 " size={45}/></Link></li>
+        <li className="  md:p-2  shadow-lg hover:text-red-400"><Link to="/live"><CgLivePhoto className="sm: h-8 ml-4 mt-2 pb-2 md:h-24" size={45}/></Link></li>
+        <li className= "  md:p-2 shadow-lg hover:text-red-400"><Link to='/sport'><HiTrophy className="sm: h-8 ml-4 mt-2  pb-2 md:h-24" size={45}/></Link></li>
+        <li className=" md:p-2 shadow-lg hover:text-red-400"><Link to='/tech'><RiComputerFill className="sm: h-8 ml-4 mt-2 pb-2  md:h-24" size={45}/></Link></li>
+        <li className="md:p-2 shadow-lg hover:text-red-400"><Link to="/downloads"><FaDownload className="sm: h-8 ml-4 mt-2 pb-2  md:h-24" size={45}/></Link></li>
       </ul>
     </div>
   );

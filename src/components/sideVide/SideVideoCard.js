@@ -2,6 +2,7 @@ import React from 'react'
 
 
 const SideVideoCard = ({info}) => {
+  // console.log(info?.snippet)
   return (
     <div className=" bg-white md:p-4 md:w-[460px] shadow md:h-28 overflow-hidden hover:scale-90  hover:bg-slate-100 border-black flex sm:h-10 sm:w-14 ">
       <img
@@ -10,7 +11,9 @@ const SideVideoCard = ({info}) => {
         src={info?.snippet?.thumbnails?.medium?.url}
       />
       <ul>
-        <li className="py-2 pl-2">{info?.snippet?.title}</li>
+        <li className="py-2 pl-2">{info?.snippet?.title.split("|")?.[0]}</li>
+        <li className="pl-2">{info?.snippet?.channelTitle}</li>
+        <li className="pl-2">{info?.snippet?.publishedAt}</li>
       </ul>
     </div>
   );
