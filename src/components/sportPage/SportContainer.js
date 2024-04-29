@@ -14,7 +14,7 @@ const SportContainer = ({info}) => {
   const getVideos = async()=>{
     const data = await fetch(SPORT_API+process.env.REACT_APP_KEY2)
     const json= await data.json()
-    console.log(json.items)
+    // console.log(json.items)
     setSport(json.items)
   }
   return (

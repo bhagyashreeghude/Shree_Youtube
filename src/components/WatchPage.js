@@ -21,7 +21,7 @@ const WatchPage = ({ info }) => {
 
   return (
     <>
-      <div className="flex flex-col sm:flex-row mt-0 md:pl-12   sm:mt-2 sm:ml-4 sm:h-10 sm:w-10 ">
+      <div className="flex  sm:flex-row mt-0 md:pl-12   sm:mt-2 sm:ml-4 sm:h-10 sm:w-10 ">
         <div className="px-5  ">
           <div className="flex">
             <iframe

@@ -9,7 +9,7 @@ export const USER_ICON_IMG_URL2 ="https://t4.ftcdn.net/jpg/00/65/77/27/240_F_657
 export const LIVE_CHAT_OFFSET= 25;
 
 
-export const YOUTUBE_SEARCH_API="http://suggestqueries.google.com/complete/search?client=firefox&ds=yt&q="
+// export const YOUTUBE_SEARCH_API="http://suggestqueries.google.com/complete/search?client=firefox&ds=yt&q="
 
 export const POPULAR_URL="https://youtube.googleapis.com/youtube/v3/videos?part=snippet%2CcontentDetails%2Cstatistics&chart=mostPopular&maxResults=50&regionCode=IN&key="
 
@@ -22,3 +22,6 @@ export const LIVE_STREAMING_API="https://www.googleapis.com/youtube/v3/search?&p
 export const MUSIC_API="https://www.googleapis.com/youtube/v3/videos?&part=snippet&chart=mostPopular&maxResults=50&order=viewCount&videoCategoryId=10&regionCode=IN&key="
 
 export const DOWNLOAD_BG_IMG="https://media.istockphoto.com/id/1384346895/photo/3d-play-icon.jpg?s=2048x2048&w=is&k=20&c=0ChyaO0VDK5MX1vTe4P4YpuSZXL5iiTpQGAL0pBb3X0="
+
+const KEY123= process.env.REACT_APP_KEY2
+export const YOUTUBE_SEARCH_API = "https://www.googleapis.com/youtube/v3/search?part=snippet&maxResults=5&type=video&key="+{KEY123}

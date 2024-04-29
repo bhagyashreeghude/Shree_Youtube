@@ -2,12 +2,12 @@ import React from "react";
 
 
 const TechCard = ({ info }) => {
-  console.log(info?.snippet?.thumbnails?.medium?.url);
-  console.log(info);
+  // console.log(info?.snippet?.thumbnails?.medium?.url);
+  // console.log(info);
 
   // const {snippet } = info;
   // const {channelTitle,title,thumbnails} = snippet;
-  console.log(info?.snippet?.thumbnails);
+  // console.log(info?.snippet?.thumbnails);
 
   return (
     <>

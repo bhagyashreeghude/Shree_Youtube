@@ -14,7 +14,7 @@ const VideoContainer = () => {
   const getVideos = async () => {
     const data = await fetch(POPULAR_URL+process.env.REACT_APP_KEY2);
     const json = await data.json();
-    console.log(json.items);
+    // console.log(json.items);
     setVideos(json.items);
   };
 

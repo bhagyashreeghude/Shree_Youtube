@@ -14,7 +14,7 @@ const TechContainer  = ({info}) => {
   const getVideos = async()=>{
     const data = await fetch(TECHNOLOGY_API+process.env.REACT_APP_KEY2)
     const json= await data.json()
-    console.log(json.items)
+    // console.log(json.items)
     setTech(json.items)
   }
   return (
