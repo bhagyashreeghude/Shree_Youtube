@@ -8,19 +8,22 @@ const LiveCard = ({ info }) => {
   return (
     <>
       <div
-        className="ml-1 pl-1 md:w-[20rem] shadow md:h-[300px] overflow-hidden hover:scale-110 sm:w-6  sm:h-[20px] border-solid border-2 border-gray-700 rounded-lg bg-gray-200 m-2 "
+        className="w-96 h-[20rem] flex flex-col 
+        ml-1 pl-1 md:w-[20rem]  md:h-[300px] overflow-hidden hover:scale-105 sm:w-60  sm:h-[240px]   rounded-xl  m-2 
+        lg:w-96 lg:h-80 lg:ml-4"
       >
         <img
-          className="rounded-lg border-solid border-2 border-black sm:w'"
+          className="rounded-lg border-solid  w-full h-48
+          lg:w-96 lg:h-80"
           alt="thumbnail-img"
           src={info?.snippet?.thumbnails?.medium?.url}
         />
         <ul>
-          <li className="font-bold py-2 sm:overflow-hidden">
+          <li className="font-bold   sm:overflow-hidden">
             {info?.snippet?.title}
           </li>
           <li>{info?.snippet?.channelTitle}</li>
-          {/* <li>{info?.snippet?.publishedAt}-ago</li> */}
+          <li>{info?.snippet?.publishedAt}-ago</li>
         </ul>
       </div>
     </>

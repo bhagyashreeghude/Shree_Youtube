@@ -19,37 +19,43 @@ const Sidebar = () => {
   if (!isMenuOpen) return null;
 
   return (
-    <div className="shadow-lg  md:w-60 p-2">
+    <div
+      className="shadow-lg  md:w-60 p-1
+                    w-20 sm:w-56  lg:w-60"
+    >
       <ul className="sm:pt-2 ">
-        
-
-        <li className="flex justify-center items-center space-x-1.5 p-3 shadow-lg hover:text-red-400">
-          <IoHome className="ml-2 " size={35} />
+        <li className="flex justify-center items-center space-x-1.5 p-3 shadow-lg hover:text-red-400 ">
           <Link to="/">
+            <IoHome className="ml-2 " size={35} />
+
             <span>Home</span>
           </Link>
         </li>
         <li className="flex justify-center items-center space-x-1.5 p-3   shadow-lg hover:text-red-400 ">
-          <CgLivePhoto className=" " size={35} />
           <Link to="/live">
+            <CgLivePhoto className=" " size={35} />
+
             <span>Live</span>
           </Link>
         </li>
         <li className=" flex justify-center items-center space-x-1.5 p-3 shadow-lg hover:text-red-400">
-          <HiTrophy className="" size={35} />
           <Link to="/sport">
+            <HiTrophy className="" size={35} />
+
             <span>Sports</span>
           </Link>
         </li>
         <li className=" flex justify-center items-center space-x-1.5 p-3  shadow-lg hover:text-red-400">
-          <RiComputerFill className="sm: h-8 ml-4 " size={35} />
           <Link to="/tech">
+            <RiComputerFill className="sm: h-8 ml-4 " size={35} />
+
             <span className="pt-2">Technology</span>
           </Link>
         </li>
         <li className="flex justify-center items-center space-x-1.5 p-3 shadow-lg hover:text-red-400">
-          <FaDownload className="sm: h-8 ml-4 " size={35} />
           <Link to="/downloads">
+            <FaDownload className="sm: h-8 ml-4 " size={35} />
+
             <span>Downloads</span>
           </Link>
         </li>

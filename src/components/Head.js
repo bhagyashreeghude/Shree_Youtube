@@ -67,56 +67,43 @@ const Head = () => {
 
   return (
     
-    <div className="md:w-full  shadow-lg sm:w-[100%] flex"> 
-      <div className="flex sm:p-3  sm:w-[100%]">
+    <div className="w-full cover flex flex-row"> 
+      <div className="flex flex-row mt-2 lg:w-32">
         <img
           onClick={toggleMenuHandler}
-          className="md:h-14 md:w-14 cursor-pointer  sm:h-6 sm:w-6 sm:p-4 "
+          className="w-4 h-6 ml-2 lg:h-8 lg:w-8"
           alt="logo"
           src={HAMBURGER_LOGO_URL}
         />
         <a href="/">
           <img
-            className="md:h-14 w-32 sm:h-10 sm:w-30  "
+            className="lg:h-12 lg:w-32 flex-row sm:h-8 sm:ml-4 sm:w-16 w-16 h-8 ml-1"
             alt="youtube-logo"
             src={YOUTUBE_LOGO}
           />
         </a>
       </div>
 
-      <div className="flex  md:w-1/2 md:mt-1 sm:w-[640px] mr-96 sm:p-3 sm:mt-10">
+      <div className=" flex  w-2 h-8 ml-2 mt-2 lg:pb-2
+                       lg:w-[600px] lg:mt-2  lg:h-11  sm:w-96 sm:pl-40 sm:">
         <input
           value={searchQuery}
           onChange={(e) => setSearchQuery(e.target.value)}
           onFocus={() => setShowSuggestions(true)}
           onBlur={() => setShowSuggestions(false)}
-          className=" md:w-[550px] pr-10 border border-gray-400  rounded-l-full  sm:w-10  sm:pl-16 "
+          className="  px-1.5 py-1.5 my-1.5 border  border-gray-900  rounded-l-full w-28 
+          lg:pb-2 lg:py-4 lg:pl-32 lg:h-11 lg:w-[37rem] lg:ml-28 sm:w-96 "
           type="text"
         />
-        <button className="border border-gray-400  rounded-r-full bg-gray-100  sm:p-2">
+        <button className="text-xs border border-gray-900 py-0 my-1.5 px-2  rounded-r-full lg:py-4 lg:w-20 lg:h-11">
           Search
         </button>
       </div>
-      {/* {showSuggestions && (
-        // <div className="absolute overflow-hidden shadow-lg rounded-lg  bg-white md:mt-20 md:h-40 md:ml-[26rem] md:w-[34rem] border border-gray-300 md:pt-2 sm:mt-14 sm:w-28
-        // ">
-        //   <ul>
-        //     {suggestions &&
-        //       suggestions.map((suggestion) => (
-        //         <li
-        //           key={suggestion}
-        //           className="md:px-3 md:py-2  hover:bg-gray-100  bg-white  md:w-[550px] shadow-lg border border-gray-300 sm:pl-6"
-        //         >
-        //           🔍 {suggestion}
-        //         </li>
-        //       ))}
-        //   </ul>
-        // </div>
-      )} */}
+      
 
-      <div className="sm:pl-0 ">
+      <div className="lg:ml-96  ">
         <img
-          className=" md:h-10 mt-6 mr-14 w-80 pr-10 sm:h-6  "
+          className="lg:w-14 lg:h-8 lg:mt-4  mx-36  h-6 mt-2"
           alt="user-icon"
           src={USER_ICON_IMG_URL}
         />
@@ -129,3 +116,6 @@ const Head = () => {
 };
 
 export default Head;
+
+
+// lg:h-10 lg:w-10 lg:mx-3 sm:h-6 sm:ml-4 sm:w-6 

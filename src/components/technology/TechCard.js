@@ -11,9 +11,10 @@ const TechCard = ({ info }) => {
 
   return (
     <>
-      <div className=" p-2 md:w-80 shadow md:h-[300px] overflow-hidden hover:scale-110 sm:w-6  sm:h-[20px] border-solid border-2 border-gray-700 rounded-lg bg-gray-200 m-2 ">
+      <div className="w-full p-2 md:w-80  md:h-[300px] overflow-hidden hover:scale-110 sm:flex-col sm:w-[28rem]  sm:h-[400px] m-2 
+      lg:w-80 lg:p-1">
         <img
-          className="rounded-lg border-solid border-2 border-black sm:w'"
+          className="rounded-lg border-solid border-2 border-black sm:w- w-[28rem]"
           alt="thumbnail-img"
           src={info?.snippet?.thumbnails?.medium?.url}
         />

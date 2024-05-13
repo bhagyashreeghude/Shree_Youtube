@@ -4,9 +4,11 @@ import React from 'react'
 const SideVideoCard = ({info}) => {
   // console.log(info?.snippet)
   return (
-    <div className=" bg-white md:p-1 md:w-[460px] w-fixed shadow md:h-28 overflow-hidden hover:scale-110  hover:bg-slate-100 border-black flex sm:h-10 sm:w-14 ">
+    <div className="w-full p-2 sm:h-full  lg:w-[400px]
+     bg-white md:p-1 md:w-[480px] w-fixed shadow md:h-28 overflow-hidden hover:scale-110  hover:bg-slate-100 border-black flex  sm:w-14 ">
       <img
-        className="snap-start rounded-xl border-black md:pt-1 md:w-40 md:h-24 sm:h-14 "
+        className="w-28 
+        snap-start rounded-xl border-black md:pt-1 md:w-48 md:h-24 sm:h-14 lg:w-44 "
         alt="thumbnail-img"
         src={info?.snippet?.thumbnails?.medium?.url}
       />

@@ -10,9 +10,11 @@ const SportCard = ({ info }) => {
 
   return (
     <>
-      <div className=" p-2 md:w-[18rem] shadow md:h-[300px] overflow-hidden hover:scale-110 sm:w-10  sm:h-[20px] border-solid border-2 border-gray-700 rounded-lg bg-gray-200 m-2 ml-4 ">
+      <div className=" p-2 md:w-[18rem]  md:h-[300px] overflow-hidden hover:scale-110   rounded-lg  m-2 ml-4 
+      sm:w-96  sm:h-[400px]  sm:flex-col md:flex-row lg:flex-row w-full h-[22rem]">
         <img
-          className="rounded-lg border-solid border-2 border-black sm:w'"
+          className="rounded-lg border-solid border-2 border-black w-96
+          sm:w-96"
           alt="thumbnail-img"
           src={info?.snippet?.thumbnails?.medium?.url}
         />
